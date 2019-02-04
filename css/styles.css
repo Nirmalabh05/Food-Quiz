@@ -1,0 +1,269 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* Prevent adjustments of font size after orientation cahanges in IE on windows, phone and in ios.*/
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* Apply a natural box layout model to all elements */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*===============Common styling====================*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+
+ul li {
+  list-style-type: none;
+  text-decoration: none; }
+
+.container {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh; }
+
+/*=======================HEADER=====================*/
+header {
+  background-color: #f4424b;
+  color: #1e0406;
+  padding: 1rem 2%; }
+  header h1 {
+    font-family: 'Abril Fatface';
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e0406; }
+  header h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #1e0406; }
+  header div.headerSocial {
+    position: relative; }
+    header div.headerSocial ul {
+      position: absolute;
+      right: 20px;
+      bottom: 30px; }
+    header div.headerSocial ul li {
+      float: left; }
+    header div.headerSocial ul li a {
+      display: block;
+      padding: .5rem;
+      color: #1e0406;
+      margin: 0;
+      transition: background 0.7s ease, color 0.7s ease; }
+    header div.headerSocial ul li a:hover {
+      color: blue; }
+
+/*===================SELECT-OPTIONS==============*/
+div#playQuiz ul li {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ffffff; }
+  div#playQuiz ul li div.cuisine select#selectCuisine {
+    margin-top: 10px;
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    color: #555;
+    font-size: inherit;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px; }
+
+/*===============QUIZ INTRODUCTION===============*/
+li#playQuizButton div {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.2em;
+  color: #ffffff;
+  font-size: 1em;
+  text-align: left; }
+
+/*=================QUIZ-CONTAINER================*/
+div#quizContainer {
+  background-color: rgba(255, 255, 255, 0.4); }
+  div#quizContainer ul li p#question, div#quizContainer ul li div#radioBox, div#quizContainer ul li p#score, div#quizContainer ul li p#feedback {
+    padding: 2%;
+    font-size: 1.5em;
+    color: #1e0406;
+    line-height: 1.3em; }
+  div#quizContainer ul li button.button {
+    margin: 2%; }
+
+/*To style the buttons*/
+.button {
+  padding: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #f4424b;
+  color: #1e0406;
+  border: 0;
+  border-radius: 10px; }
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s; }
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s; }
+
+.button:hover span {
+  padding-right: 25px; }
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0; }
+
+/*==========================RESULT-CONTAINER=================*/
+div#resultContainer {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #1e0406;
+  font-size: 1.6em;
+  line-height: 1.3em;
+  padding: 2%; }
+
+ion-icon {
+  font-size: 32px;
+  color: yellow; }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  /*===================SELECT-OPTIONS==============*/
+  div#playQuiz ul li div.cuisine select#selectCuisine {
+    margin: 10px auto; }
+
+  /*INTRODUCTION*/
+  li#playQuizButton div {
+    font-size: 1.5em;
+    line-height: 1.2em; }
+
+  div#resultContainer {
+    font-size: 2em; } }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  /*===================WRAPPER=====================*/
+  div#wrapper {
+    max-width: 75rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 10px #000000;
+    background-color: #fff; }
+
+  /*===================Common styling==========*/
+  .container {
+    width: 100%; }
+
+  /*================QUIZ-INTRODUCTION============*/
+  li#playQuizButton div {
+    font-size: 1.4em;
+    line-height: 1.3em;
+    padding: 2%;
+    text-align: left; } }
+
+/*# sourceMappingURL=styles.css.map */

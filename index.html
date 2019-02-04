@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8" />
+		<!-- TELLS PHONE NOT LIE ABOUT THEIR WIDTH AND MAXIMUM-SCALE DOES NOT ALLOW USER TO ZOOM-IN -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <title>Food Quiz</title>
+        <link rel="icon" href="images/logo1.png" />
+        
+        <!--STYLESHEETS-->
+        <link href="css/styles.css" rel="stylesheet">
+        
+        <!--GOOGLE FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        
+        <!--ANIMATION-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        
+        <!--FONT-AWESOME-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+        <div id="wrapper">
+            <header id="titleText">
+                <div class="row">
+                    <div class="col-six tab-full">
+                        <h1>Food Quiz</h1>
+                        <br>
+                        <h2>"Test Your Food Knowledge"</h2>
+                    </div>
+
+                    <div class="col-six tab-full pull-right social">
+                        <div class="headerSocial">
+                            <ul>        
+                              <li><a href="#"><i class="fab fa-facebook-f fa-1x"></i></a></li>
+                              <li><a href="#"><i class="fab fa-twitter fa-1x"></i></a></li>
+                              <li><a href="#"><i class="fab fa-instagram fa-1x"></i></a></li>
+                           </ul>  		
+                       </div>
+                    </div>
+                </div>
+            </header>
+            
+            
+            <div id="imageBackground" class="imageConatiner" style="background-image: url('images/spices.jpeg'); background-repeat:no-repeat; background-position: center; background-size: cover; height: 100vh;">
+                <div id="playQuiz">
+                    <ul>
+                        <li id="selectQuiz">
+                            Select Cuisine of your choice
+                            <div class="cuisine" >
+                                <select id="selectCuisine">
+                                    <option value="00" selected disabled hidden>Select Cuisine</option>
+                                    <option value="british">British</option>
+                                    <option value="indian">Indian</option>
+                                    <option value="mexican">Mexican</option>
+                                    <option value="itallian">Itallian</option>
+                                </select>
+                            </div>
+                            
+                        </li>
+                        <li id="playQuizButton" style="display: none;"> 
+                            <div id="introText">
+                                <p>You can test your food knowledge by playing Food Quiz!</p>
+                                <p>The test contains 5 questions on each cuisine.</p>
+                                <p>The test is not official, it's just a nice way to see how much you know about food.</p>
+                                <p>You will get 1 point for each correct answer.</p>
+                                <p>Good Luck!</p>
+                                <br>
+                            </div>
+                            <button class="button" name="" id="button1"><span>Start the Quiz </span></button>
+                        </li>
+                    </ul>
+                </div>
+                 
+                <div id="quizContainer" class="container" style="display: none;">
+                    <ul>    
+                        <li><p id="question"></p></li>
+                            <li>
+                                <div id="radioBox">
+                                    <label class="option">
+                                        <input type="radio" name="option"  id="options1" value=1 />
+                                        <span id="opt1"></span>
+                                    </label>
+                                    <br>
+                                    <label class="option">
+                                        <input type="radio" name="option" id="options2" value=2 />
+                                        <span id="opt2"></span>
+                                    </label>
+                                    <br>
+                                    <label class="option">
+                                        <input type="radio" name="option" id="options3" value=3 />
+                                        <span id="opt3"></span>
+                                    </label>
+                                    <br>
+                                    <label class="option">
+                                        <input type="radio" name="option" id="options4" value=4 />
+                                        <span id="opt4"></span>
+                                    </label>
+                                    <br>
+                                </div><!--END OF DIV RADIOBOX-->
+                            </li> 
+
+                            <li id="submitButton">
+                                <button id="nextButton" class="next-btn button">Submit Answer</button>
+                            </li>
+
+                            <li><p id="score"></p></li>
+                            <li><p id="feedback"></p></li>
+                        </ul>
+                    </div><!--END OF DIV QUIZ-CONTAINER-->
+                
+                    <div id="resultContainer" class="container result" style="display: none;">
+                        <ion-icon name="happy" id="icons"></ion-icon>
+                        <i class="fas fa-hand-point-down"></i>
+                    </div>
+                
+                </div><!--end of imageContainer-->
+                
+        </div><!--end of wrapper-->
+        <script type="text/javascript" src="js/questions.js"></script>
+        <script type="text/javascript" src="js/quiz.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
+	</body>
+</html>

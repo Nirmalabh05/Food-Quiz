@@ -1,0 +1,16 @@
+/*===================SELECT-OPTIONS==============*/
+div#playQuiz ul li{
+    div.cuisine select#selectCuisine{
+        margin: 10px auto;
+    }
+}
+
+/*INTRODUCTION*/
+li#playQuizButton div{
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+div#resultContainer{
+    font-size: 2em;
+}

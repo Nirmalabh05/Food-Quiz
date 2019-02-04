@@ -1,0 +1,187 @@
+/* Prevent adjustments of font size after orientation cahanges in IE on windows, phone and in ios.*/
+html{
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+
+/* Apply a natural box layout model to all elements */
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box; 
+}
+
+/*===============Common styling====================*/
+body {
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+}
+
+ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*=======================HEADER=====================*/
+header{
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    padding: 1rem $gutter;
+    
+    h1{
+        font-family: 'Abril Fatface';
+        font-size: 1.8rem;
+        font-weight: $boldWeight;
+        color: $secondaryColor;
+    }
+    h2{
+        font-family: 'Lobster', cursive;
+        font-size: 1.2rem;
+        font-weight: 100;
+        color: $secondaryColor;
+    }
+    div.headerSocial{
+        position: relative;
+        ul{
+            position: absolute;
+            right: 20px;
+            bottom: 30px;  
+        }
+        ul li{
+            float: left;
+        }
+        ul li a{
+            display: block;
+            padding: .5rem;
+            color: $secondaryColor;
+            margin: 0;
+            transition: background 0.7s ease, color 0.7s ease;
+        }
+        ul li a:hover{
+            color: blue;
+        }
+    }
+}//end of header
+
+/*===================SELECT-OPTIONS==============*/
+div#playQuiz ul li{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ffffff;
+    
+    div.cuisine select#selectCuisine{
+        margin-top: 10px;
+        -webkit-appearance: button;
+        -webkit-border-radius: 2px;
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        -webkit-padding-end: 20px;
+        -webkit-padding-start: 2px;
+        -webkit-user-select: none;
+        background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+        background-position: 97% center;
+        background-repeat: no-repeat;
+        border: 1px solid #AAA;
+        color: #555;
+        font-size: inherit;
+        overflow: hidden;
+        padding: 5px 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 250px;
+    }
+}
+
+
+/*===============QUIZ INTRODUCTION===============*/
+li#playQuizButton div{ 
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.2em;
+    color: #ffffff;
+    //font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+}//end of intro-container
+
+
+/*=================QUIZ-CONTAINER================*/
+div#quizContainer{
+    background-color: rgba(255,255,255,0.4);
+    ul{
+        
+        li p#question, li div#radioBox, li p#score, li p#feedback{
+            padding: 2%;
+            font-size: 1.5em;
+            color: $secondaryColor;
+            line-height: 1.3em;   
+        }
+        li button.button{
+            margin: 2%;
+        }
+    }   
+}
+
+/*To style the buttons*/
+.button{
+   padding: 20px;
+   font-size: 1em;
+    font-weight: bold;
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    border: 0;
+    border-radius: 10px;
+}
+.button span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+}
+.button span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+}
+.button:hover span {
+   padding-right: 25px;
+}
+.button:hover span:after {
+   opacity: 1;
+   right: 0;
+}
+//End of styling button
+
+/*==========================RESULT-CONTAINER=================*/
+div#resultContainer{
+    text-align: left;
+    background-color: rgba(255,255,255,0.4);
+    color: $secondaryColor;
+    font-size: 1.6em;
+    line-height: 1.3em;
+    padding: $gutter;
+}
+
+ion-icon{
+    font-size: 32px;
+    color: yellow;
+}
+
+
+
+
+
+
+
+

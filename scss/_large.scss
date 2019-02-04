@@ -1,0 +1,22 @@
+/*===================WRAPPER=====================*/
+div#wrapper{
+    max-width: 75rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 10px #000000;
+    background-color: #fff;
+}
+
+/*===================Common styling==========*/
+.container{
+    width: 100%;
+//    margin-left:150px;
+//    margin-right:150px; 
+}
+
+/*================QUIZ-INTRODUCTION============*/
+li#playQuizButton div{
+    font-size: 1.4em;
+    line-height: 1.3em;
+    padding: 2%;
+    text-align: left;
+}//end of intro-container

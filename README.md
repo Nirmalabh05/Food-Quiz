@@ -17,15 +17,15 @@ Load this link in your browser https://nirmalahalappa.co.uk/foodQuiz/
 
 ## How I built the Food Quiz Project
 I manipulated the DOM with Vanilla JS, altered part of the HTML and also styled the quiz project with CSS
-    * HTML-
-        * created a introContainer for the instructions.
-        * created a quizContainer for the questions and options.
-        * created a resultConatiner for the final score and feedback.
-    * CSS-
-        * Styled the quiz project with css 
-        * Used media-queries to make the application responsive.
-    * JS-
-        * created a quiz.json file to store questions and options and stored this file in myjson.com.
-        * created a main.js file to add event listeners.
-        * created a question.js file for question constructor function.
-        * created a quiz.js file for the logic to loadQuestions, displayQuestions, checkAnswer, ChangeBackgroundImage and to output the final score and feedback.
+### HTML-
+* created a introContainer for the instructions.
+* created a quizContainer for the questions and options.
+* created a resultConatiner for the final score and feedback.
+### CSS-
+* Styled the quiz project with css 
+* Used media-queries to make the application responsive.
+### JS-
+* created a quiz.json file to store questions and options and stored this file in myjson.com.
+* created a main.js file to add event listeners.
+* created a question.js file for question constructor function.
+* created a quiz.js file for the logic to loadQuestions, displayQuestions, checkAnswer, ChangeBackgroundImage and to output the final score and feedback.
